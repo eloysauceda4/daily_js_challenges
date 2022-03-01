@@ -51,14 +51,20 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 function addTwoNumbers(num1, num2) {
+  //I would make a if statement in my body showing the parameters need to be added
+  //cont... and return a NaN after my else statement. Finally we would create a result varabile 
+  //cont.. and complete the console log for diffrent results. 
   if (num1 >= num2) {
     return num1 + num2
 } else {
   return NaN
 }
 }
-let result = addTwoNumbers(10, 5)
-console.log(result)
+let result1 = addTwoNumbers(10, 5)
+let result2 = addTwoNumbers(10,-2)
+let result3 = addTwoNumbers(0,0)
+let result4 = addTwoNumbers('Hello',5)
+
 
 /*-----------------------------------------------------------------
 Challenge: 03-sumNumbers
@@ -78,7 +84,15 @@ sumNumbers([2, 10, -5]) //=> 7
 sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
-function sumNumbers(nums) {}
+function sumNumbers(nums) {
+  let sum = 0
+  for(let i = 0; i < nums.length; i++) {
+    sum += nums[i]
+  }
+  return sum 
+  
+}
+//console.log(sumNumbers)
 /*-----------------------------------------------------------------
 Challenge: 04-addList
 
